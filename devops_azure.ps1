@@ -27,7 +27,7 @@ executeScript "FileExplorerSettings.ps1";
 executeScript "SystemConfiguration.ps1";
 executeScript "RemoveDefaultApps.ps1";
 executeScript "CommonDevTools.ps1";
-executeScript "Browsers.ps1";
+# executeScript "Browsers.ps1";
 
 executeScript "HyperV.ps1";
 RefreshEnv
@@ -39,7 +39,7 @@ choco install -y powershell-core
 choco install -y azure-cli
 Install-Module -Force Az
 choco install -y microsoftazurestorageexplorer
-choco install -y terraform
+# choco install -y terraform
 
 # Install tools in WSL instance
 write-host "Installing tools inside the WSL distro..."
