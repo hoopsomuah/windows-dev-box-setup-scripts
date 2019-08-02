@@ -41,6 +41,16 @@ Install-Module -Force Az
 # choco install -y microsoftazurestorageexplorer
 # choco install -y terraform
 
+choco install -y dotnetcore-sdk
+choco install -y NuGet.CommandLine
+choco install -y postman
+choco install -y meshlab
+
+choco install -y visualstudio2017enterprise --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
+Update-SessionEnvironment #refreshing env due to Git install
+choco install -y visualstudio2017-workload-azure
+choco install -y visualstudio2019-workload-netcoretools
+
 # Install tools in WSL instance
 write-host "Installing tools inside the WSL distro..."
 Ubuntu1804 run apt install ansible -y
